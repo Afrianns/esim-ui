@@ -5,22 +5,27 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
+@theme {
+  --color-main: #2B3499;
+  --color-main-dark: #151B6F;
+  --color-main-light: #7F89E0;
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
-  background: var(--background);
+  background: var(--color-main);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.menu-style-button {
+  @apply border rounded-full px-5 py-2 flex items-center gap-x-2;
+}
+
+.button-style {
+  @apply bg-main py-1 px-5 rounded-md cursor-pointer text-white hover:bg-main/90;
 }

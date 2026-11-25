@@ -1,0 +1,158 @@
+[
+  {
+    "id": 1,
+    "name": "E-SIM Asia 7 Days",
+    "price": 56000,
+    "quota": "45GB",
+    "region": "Asia",
+    "product_type": "instant",
+    "images": [
+      "https://picsum.photos/200/300",
+      "https://picsum.photos/200/300"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "E-SIM Asia 15 Days",
+    "price": 115000,
+    "quota": "100GB",
+    "region": "Asia",
+    "product_type": "topupable",
+    "images": [
+      "https://picsum.photos/200/300",
+      "https://picsum.photos/200/300"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "E-SIM Asia 30 Days",
+    "price": 195000,
+    "quota": "Unlimited",
+    "region": "Asia",
+    "product_type": "topupable",
+    "images": [
+      "https://picsum.photos/200/300",
+      "https://picsum.photos/200/300"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "E-SIM Amerika 7 Days",
+    "price": 145000,
+    "quota": "15GB",
+    "region": "Amerika",
+    "product_type": "instant",
+    "images": [
+      "https://picsum.photos/200/300",
+      "https://picsum.photos/200/300"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "E-SIM Amerika 14 Days",
+    "price": 265000,
+    "quota": "30GB",
+    "region": "Amerika",
+    "product_type": "topupable",
+    "images": [
+      "https://picsum.photos/200/300",
+      "https://picsum.photos/200/300"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "E-SIM Amerika 30 Days",
+    "price": 450000,
+    "quota": "50GB",
+    "region": "Amerika",
+    "product_type": "topupable",
+    "images": [
+      "https://picsum.photos/200/300",
+      "https://picsum.photos/200/300"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "E-SIM Eropa 7 Days",
+    "price": 120000,
+    "quota": "20GB",
+    "region": "Eropa",
+    "product_type": "instant",
+    "images": [
+      "https://picsum.photos/200/300",
+      "https://picsum.photos/200/300"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "E-SIM Eropa 15 Days",
+    "price": 230000,
+    "quota": "50GB",
+    "region": "Eropa",
+    "product_type": "topupable",
+    "images": [
+      "https://picsum.photos/200/300",
+      "https://picsum.photos/200/300"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "E-SIM Eropa 30 Days",
+    "price": 390000,
+    "quota": "100GB",
+    "region": "Eropa",
+    "product_type": "topupable",
+    "images": [
+      "https://picsum.photos/200/300",
+      "https://picsum.photos/200/300"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "E-SIM Oseania 7 Days",
+    "price": 110000,
+    "quota": "15GB",
+    "region": "Oseania",
+    "product_type": "instant",
+    "images": [
+      "https://picsum.photos/200/300",
+      "https://picsum.photos/200/300"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "E-SIM Oseania 14 Days",
+    "price": 210000,
+    "quota": "35GB",
+    "region": "Oseania",
+    "product_type": "topupable",
+    "images": [
+      "https://picsum.photos/200/300",
+      "https://picsum.photos/200/300"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "E-SIM Afrika 10 Days",
+    "price": 185000,
+    "quota": "10GB",
+    "region": "Afrika",
+    "product_type": "instant",
+    "images": [
+      "https://picsum.photos/200/300",
+      "https://picsum.photos/200/300"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "E-SIM Afrika 30 Days",
+    "price": 380000,
+    "quota": "25GB",
+    "region": "Afrika",
+    "product_type": "topupable",
+    "images": [
+      "https://picsum.photos/200/300",
+      "https://picsum.photos/200/300"
+    ]
+  }
+]
