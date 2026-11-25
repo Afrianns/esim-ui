@@ -23,9 +23,13 @@ body {
 
 
 .menu-style-button {
-  @apply border rounded-full px-5 py-2 flex items-center gap-x-2;
+  @apply border rounded-full px-5 py-2 flex items-center gap-x-2 hover:bg-white/30 cursor-pointer;
 }
 
 .button-style {
-  @apply bg-main py-1 px-5 rounded-md cursor-pointer text-white hover:bg-main/90;
+  @apply bg-main rounded-full cursor-pointer text-white hover:bg-main/90;
+}
+
+.radio-list-style {
+  @apply w-full hover:bg-main/5 cursor-pointer px-0 rounded-md flex items-center justify-between;
 }

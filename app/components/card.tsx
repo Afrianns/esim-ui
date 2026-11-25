@@ -1,8 +1,8 @@
 import { formatMoney } from "@/app/lib/formatMoney";
-import { ProductType } from "@/app/types/product";
+import { ESIMProductType } from "@/app/types/product";
 import Image from "next/image";
 
-export default function Card({product}: {product: ProductType}) {
+export default function Card({product}: {product: ESIMProductType}) {
     return (
         <main key={product.id} className="flex flex-col h-110 p-2 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all rounded-xl border border-gray-300 bg-white">
             <div className="h-100 relative rounded-lg overflow-hidden">
@@ -31,7 +31,7 @@ export default function Card({product}: {product: ProductType}) {
                 <h2 className="text-lg font-bold">{product.name}</h2>
 
                 <p className="text-md font-bold text-main">{formatMoney(product.price)}</p>
-                <button className="button-style">Beli</button>
+                <button className="button-style py-1 px-5">Beli</button>
             </div>
 
         </main>

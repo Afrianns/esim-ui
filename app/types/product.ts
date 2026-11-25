@@ -1,12 +1,12 @@
-type region = "Amerika" | "Oseania" | "Eropa" | "Afrika"
-type product_type = "instant" | "topupable"
+type Region = "Amerika" | "Oseania" | "Eropa" | "Afrika" | "Asia"
+type ProductType = "instant" | "topupable"
 
-export interface ProductType {
+export interface ESIMProductType {
     "id": number,
     "name": string,
     "price": number,
     "quota": string,
-    "region": region,
-    "product_type": product_type,
+    "region": Region,
+    "product_type": ProductType,
     "images": string[]
 }
