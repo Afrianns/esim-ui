@@ -13,6 +13,7 @@ export default function DurationList({ durations }: { durations: DurationType[] 
   useEffect(() => {
     setSelecteduration(durations[0].duration)
     setAddDurationPrice(durations[0].price_add)
+    setDuration(durations[0].duration)
   }, [])
 
   const selectDuration = (selectedVariant: DurationType) => {

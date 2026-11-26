@@ -41,8 +41,6 @@ export default function Filter() {
   const closeFilterMenu = () => setFilterState(prev => Object.fromEntries(Object.keys(prev).map((key) => [key, false])) as typeof prev)
 
 
-  // region
-
   const regions = ["Amerika", "Oseania", "Eropa", "Afrika", "Asia"]
 
   const showPickedRegion = (type: string) => setSelectedRegion(type)
@@ -85,7 +83,7 @@ export default function Filter() {
           {filterState["region"] && 
             <>
               <div className="mt-3 flex items-center justify-between">
-                <h3 className="font-bold text-2xl">Pilih Region.</h3>          
+                <h3 className="font-bold text-2xl">Pilih Region</h3>          
                 <button className="text-main text-md font-medium cursor-pointer" onClick={() => resetRegion()}>Reset</button>
               </div>
               
@@ -103,7 +101,7 @@ export default function Filter() {
           {filterState["product-type"] && 
             <>
               <div className="mt-3 flex items-center justify-between">
-                <h3 className="font-bold text-2xl">Pilih Jenis Produk.</h3>
+                <h3 className="font-bold text-2xl">Pilih Jenis Produk</h3>
                 <button className="text-main text-md font-medium cursor-pointer" onClick={() => resetProductType()}>Reset</button>
               </div>
               

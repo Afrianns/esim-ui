@@ -1,12 +1,13 @@
 
-import data from "@/app/data/products.json"
 import { notFound } from "next/navigation";
 import ProductType from "@/app/components/productType";
 import ImageShowcase from "./_components/imageShowcase";
 import QuotaList from "./_components/quotaList";
 import Price from "./_components/price";
 import DurationList from "./_components/durationList";
-
+import Link from "next/link";
+import { singelProduct } from "@/app/lib/getSingleProduct";
+import NextStepButton from "./_components/nextStepButton";
 
 export const instant = false;
 
@@ -17,9 +18,9 @@ export default async function Detail({
 }) {
   const { id } = await params
 
-  const product = data.find((item) => String(item.id) === id);
+  const product = singelProduct(id)
 
-  if(!product) notFound();
+  if(!product) notFound()
 
   return (
     <main className="flex flex-col h-dvh">
@@ -58,8 +59,7 @@ export default async function Detail({
           <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nihil qui ab, dolor, delectus optio provident tempore numquam reiciendis inventore impedit dolore?</li>
           <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id ea nobis delectus.</li>
         </ul>
-
-        <button className="button-style py-3 w-full">Beli Sekarang</button>
+        <NextStepButton />
       </div>
     </main>
   )

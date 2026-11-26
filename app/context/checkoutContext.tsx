@@ -1,27 +1,8 @@
 "use client"
 
 import { createContext, useState } from "react";
+import { CheckoutContextType, paymentMethodType } from "../types/checkoutType";
 
-interface CheckoutContextType {
-  quota: number
-  setQuota: (x: number) => void
-  duration: number
-  setDuration: (x: number) => void
-
-  addDurationPrice: number
-  setAddDurationPrice: (x: number) => void
-
-  datetime: Date
-  setDatetime: (x: Date) => void
-  price: number
-  setPrice: (x: number) => void
-  userName: string
-  setUserName: (x: string) => void
-  userEmail: string
-  setUserEmail: (x: string) => void
-  userPhoneNumber: string
-  setUserPhoneNumber: (x: string) => void
-}
 
 const CheckoutContext = createContext<CheckoutContextType | null>(null)
 
@@ -36,10 +17,13 @@ function CheckoutContextProvider({ children }: {children: React.ReactNode}) {
   const [userName, setUserName] = useState<string>("")
   const [userEmail, setUserEmail] = useState<string>("")
   const [userPhoneNumber, setUserPhoneNumber] = useState<string>("")
-  const [datetime, setDatetime] = useState<Date>(new Date())
+
+  const [datetime, setDatetime] = useState<Date | null>(null)
+  
+  const [paymentMethod, setPaymentMethod] = useState<paymentMethodType>("Saldo")
 
   return (
-    <CheckoutContext.Provider value={{ quota, setQuota, duration, setDuration, price, setPrice, userName, setUserName, userEmail, setUserEmail, userPhoneNumber, setUserPhoneNumber, datetime, setDatetime, addDurationPrice, setAddDurationPrice }}>
+    <CheckoutContext.Provider value={{ quota, setQuota, duration, setDuration, price, setPrice, userName, setUserName, userEmail, setUserEmail, userPhoneNumber, setUserPhoneNumber, datetime, setDatetime, addDurationPrice, setAddDurationPrice, paymentMethod, setPaymentMethod }}>
       {children}
     </CheckoutContext.Provider>
   );

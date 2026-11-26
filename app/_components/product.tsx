@@ -22,7 +22,7 @@ export default function Product() {
     const q = search.trim().toLowerCase();
 
     return data.filter((item) => {
-        if(currentRegion) {
+        if(currentRegion && currentRegion != "all") {
           return item.region.toLowerCase() === currentRegion.toLowerCase()
         }
         return item
