@@ -1,8 +1,7 @@
-
-export default function ProductType({productType}: {productType: string}) {
+export default function ProductTag({productTag}: {productTag: string}) {
   return (
-    <div className="flex items-center gap-x-1.5 bg-main-light/20 w-fit px-4 rounded-xl text-main text-sm">
-      {productType == "instant" ? 
+    <div className="flex items-center gap-x-1.5 bg-main-light/20 w-fit rounded-xl text-main text-sm py-1 px-3">
+      {productTag == "instant" ? 
           <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
           <path d="M0 0h24v24H0z" fill="none" />
           <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 14L14 3v7h6L10 21v-7z" />
@@ -16,7 +15,7 @@ export default function ProductType({productType}: {productType: string}) {
           </g>
           </svg>
       }
-      <p>{productType}</p>
+      <span className="my-0 py-0 pb-.5 leading-0">{productTag}</span>
   </div>
   )
 }

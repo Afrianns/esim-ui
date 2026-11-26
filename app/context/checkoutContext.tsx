@@ -3,7 +3,6 @@
 import { createContext, useState } from "react";
 import { CheckoutContextType, paymentMethodType } from "../types/checkoutType";
 
-
 const CheckoutContext = createContext<CheckoutContextType | null>(null)
 
 function CheckoutContextProvider({ children }: {children: React.ReactNode}) {

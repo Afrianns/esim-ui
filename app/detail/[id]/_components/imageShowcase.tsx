@@ -2,15 +2,12 @@
 
 import { useState, useRef } from "react";
 import Image from "next/image";
+import { ProductGalleryProps } from "@/app/types/productType";
 
 export const instant = false;
 
-interface ProductGalleryProps {
-  images: string[];
-  name: string;
-}
-
 export default function ImageShowcase({ images, name }: ProductGalleryProps) {
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [dragOffset, setDragOffset] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
@@ -49,7 +46,6 @@ export default function ImageShowcase({ images, name }: ProductGalleryProps) {
       onPointerCancel={handlePointerUp}
       className="h-100 shrink-0 relative overflow-hidden bg-gray-300 select-none touch-pan-y cursor-grab active:cursor-grabbing"
     >
-      <span className="absolute z-10 top-5 left-2 bg-main text-white backdrop-blur-md py-2 px-5 rounded-full text-sm font-bold uppercase">Back</span>
       <div
         className={`flex h-full w-full ${
           isDragging ? "" : "transition-transform duration-300 ease-out"

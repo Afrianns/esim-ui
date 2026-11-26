@@ -1,8 +1,6 @@
-
 export default function Search({ setSearch }: {setSearch: (x: string) => void}) {
-
     return (
-        <main className="m-5 mt-0 space-y-5">
+        <main className="my-5 mt-0 space-y-5 container-style">
             <div className="space-y-4">
                 <section className="relative">
                     <input type="text" placeholder="Cari Produk yang Anda Mau" className="bg-main-dark placeholder:text-main-light rounded-lg flex items-center justify-between py-4 px-5 w-full outline-main outline-solid focus:outline-main-light" onChange={(e) => setSearch(e.target.value)} />

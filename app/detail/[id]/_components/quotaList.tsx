@@ -1,7 +1,7 @@
 "use client"
 
 import useCheckoutContext from "@/app/hooks/useCheckoutContext"
-import { VariantType } from "@/app/types/product"
+import { VariantType } from "@/app/types/productType"
 import { useEffect, useState } from "react"
 
 export default function QuotaList({ quotas }: { quotas: VariantType[] }) {
@@ -27,7 +27,6 @@ export default function QuotaList({ quotas }: { quotas: VariantType[] }) {
       {quotas.map((quota, idx) => 
         <li key={idx}><button className={`badge-style ${selectedQuota == quota.quota ? "bg-main text-white" : "bg-main-light/20 text-main"}`} onClick={() => selectQuota(quota)}>{quota.quota}GB</button></li>
       )}
-      
     </ul>
   )
 }

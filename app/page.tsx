@@ -12,7 +12,6 @@ export default function Home() {
   );
 }
 
-
 const Laoading = () => {
   return (
     <div className="w-full h-screen flex flex-col justify-center items-center">

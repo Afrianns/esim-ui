@@ -12,5 +12,11 @@ export interface ESIMProductType {
     "available_duration": DurationType[]
     "region": Region,
     "product_type": ProductType,
-    "images": string[]
+    "images": string[],
+    "description": string
+}
+
+export interface ProductGalleryProps {
+  images: string[];
+  name: string;
 }

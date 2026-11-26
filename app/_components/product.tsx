@@ -1,6 +1,6 @@
 "use client"
 
-import { ESIMProductType } from "@/app/types/product";
+import { ESIMProductType } from "@/app/types/productType";
 import data from "@/app/data/products.json"
 
 import Card from "@/app/_components/card";
@@ -22,15 +22,11 @@ export default function Product() {
     const q = search.trim().toLowerCase();
 
     return data.filter((item) => {
-        if(currentRegion && currentRegion != "all") {
-          return item.region.toLowerCase() === currentRegion.toLowerCase()
-        }
+        if(currentRegion && currentRegion != "all") item.region.toLowerCase() === currentRegion.toLowerCase()
         return item
       }
     ).filter((item) => {
-        if(currentProductType) {
-          return item.product_type.toLowerCase() === currentProductType.toLowerCase()
-        }
+        if(currentProductType && currentProductType != "all") item.product_type.toLowerCase() === currentProductType.toLowerCase()
         return item
       }
       
@@ -41,19 +37,15 @@ export default function Product() {
           field?.toLowerCase().includes(q)
       )}
     );
-  }, [data, search, currentRegion]);
-
-
+  }, [data, search, currentRegion, currentProductType]);
 
   return (
     <>
-      <section className="flex items-center gap-x-2 hover:bg-main-dark/20 rounded-md w-fit py-8 px-5 cursor-pointer">
-        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-            <path d="M0 0h24v24H0z" fill="none" />
-            <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m14 6l-6 6l6 6" />
-        </svg>
-        <h3>Travel eSIM</h3>
-      </section>
+      <div className="container-style">
+        <section className="flex items-center gap-x-2 hover:bg-main-dark/20 rounded-md w-fit px-2 my-5 cursor-pointer">
+          <h3 className="font-bold">Travel eSIM</h3>
+        </section>
+      </div>
       <section className="flex flex-col h-dvh">
         <div>
           <Search setSearch={setSearch} />
@@ -62,9 +54,10 @@ export default function Product() {
           </Suspense>
         </div>
 
-        <div className="bg-white text-black w-full rounded-t-[30px] p-5 flex-1 mt-5">
+        <div className="wrapper-card-style py-6 mt-5">
+          <div className="container-style">
             {filteredResult.length >= 1 ? 
-                <div className="grid grid-cols-2 gap-5">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
                     <>
                       {filteredResult.map((product) => (
                         <Card key={product.id} product={product as ESIMProductType} />
@@ -74,6 +67,7 @@ export default function Product() {
               : 
                 <EmptyListing />
               }
+          </div>
         </div>
       </section>
     </>

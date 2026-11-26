@@ -10,17 +10,19 @@
   --color-main-dark: #151B6F;
   --color-main-light: #7F89E0;
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 
 body {
   background: var(--color-main);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-noto-sans);
 }
 
+.container-style {
+  @apply max-w-200 md:mx-auto px-5;
+
+}
 
 .menu-style-button {
   @apply border rounded-full px-5 py-2 flex items-center gap-x-2 hover:bg-white/30 cursor-pointer;
@@ -31,7 +33,7 @@ body {
 }
 
 .radio-list-style {
-  @apply w-full hover:bg-main/5 cursor-pointer px-0 rounded-md flex items-center justify-between;
+  @apply w-full cursor-pointer px-0 rounded-md flex items-center justify-between;
 }
 
 .badge-style{
@@ -40,4 +42,24 @@ body {
 
 .input-style{
   @apply w-full rounded-lg border border-main-dark/50 py-2 px-5 mt-2;
+}
+
+.payment-method-card-style{
+  @apply border-2 border-black/20 py-5 px-5! font-bold;
+}
+
+.line-dashed-style{
+  @apply border-t w-full border-dashed border-black/30 my-8;
+}
+
+.horizontal-filled-layout-style {
+  @apply flex flex-col justify-between h-full;
+}
+
+.reset-button-style {
+  @apply text-main font-medium cursor-pointer;
+}
+
+.wrapper-card-style {
+  @apply bg-white text-black w-full rounded-t-[30px] flex-1;
 }

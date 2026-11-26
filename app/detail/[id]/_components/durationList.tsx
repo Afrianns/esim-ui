@@ -1,7 +1,7 @@
 "use client"
 
 import useCheckoutContext from "@/app/hooks/useCheckoutContext"
-import { DurationType } from "@/app/types/product"
+import { DurationType } from "@/app/types/productType"
 import { useEffect, useState } from "react"
 
 export default function DurationList({ durations }: { durations: DurationType[] }) {
