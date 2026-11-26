@@ -1,9 +1,42 @@
 [
   {
     "id": 1,
-    "name": "E-SIM Asia 7 Days",
-    "price": 56000,
-    "quota": "45GB",
+    "name": "E-SIM Asia",
+    "available_pick": [
+      {
+        "price": 50000,
+        "quota": 45
+      },
+      {
+        "price": 56000,
+        "quota": 55
+      },
+      {
+        "price": 66000,
+        "quota": 60
+      }
+    ],
+
+    "available_duration": [
+      {
+        "duration": 8,
+        "price_add": 10000
+      },
+      {
+        "duration": 12,
+        "price_add": 16000
+      },
+      {
+         
+        "duration": 15,
+        "price_add": 20000
+      },
+      {
+         
+        "duration": 29,
+        "price_add": 32000
+      }
+    ],
     "region": "Asia",
     "product_type": "instant",
     "images": [
@@ -13,9 +46,37 @@
   },
   {
     "id": 2,
-    "name": "E-SIM Asia 15 Days",
-    "price": 115000,
-    "quota": "100GB",
+    "name": "E-SIM Asia ",
+    "available_pick": [
+      {
+        "price": 56000,
+        "quota": 45
+      },
+      {
+        "price": 56000,
+        "quota": 55
+      }
+    ],
+    "available_duration": [
+      {
+        "duration": 8,
+        "price_add": 10000
+      },
+      {
+        "duration": 12,
+        "price_add": 16000
+      },
+      {
+         
+        "duration": 15,
+        "price_add": 20000
+      },
+      {
+         
+        "duration": 29,
+        "price_add": 32000
+      }
+    ],
     "region": "Asia",
     "product_type": "topupable",
     "images": [
@@ -25,9 +86,37 @@
   },
   {
     "id": 3,
-    "name": "E-SIM Asia 30 Days",
-    "price": 195000,
-    "quota": "Unlimited",
+    "name": "E-SIM Asia ",
+    "available_pick": [
+      {
+        "price": 56000,
+        "quota": 45
+      },
+      {
+        "price": 56000,
+        "quota": 55
+      }
+    ],
+    "available_duration": [
+      {
+        "duration": 8,
+        "price_add": 10000
+      },
+      {
+        "duration": 12,
+        "price_add": 16000
+      },
+      {
+         
+        "duration": 15,
+        "price_add": 20000
+      },
+      {
+         
+        "duration": 29,
+        "price_add": 32000
+      }
+    ],
     "region": "Asia",
     "product_type": "topupable",
     "images": [
@@ -37,9 +126,37 @@
   },
   {
     "id": 4,
-    "name": "E-SIM Amerika 7 Days",
-    "price": 145000,
-    "quota": "15GB",
+    "name": "E-SIM Amerika",
+    "available_pick": [
+      {
+        "price": 56000,
+        "quota": 45
+      },
+      {
+        "price": 56000,
+        "quota": 55
+      }
+    ],
+    "available_duration": [
+      {
+        "duration": 8,
+        "price_add": 10000
+      },
+      {
+        "duration": 12,
+        "price_add": 16000
+      },
+      {
+         
+        "duration": 15,
+        "price_add": 20000
+      },
+      {
+         
+        "duration": 29,
+        "price_add": 32000
+      }
+    ],
     "region": "Amerika",
     "product_type": "instant",
     "images": [
@@ -49,21 +166,78 @@
   },
   {
     "id": 5,
-    "name": "E-SIM Amerika 14 Days",
-    "price": 265000,
-    "quota": "30GB",
+    "name": "E-SIM Amerika ",
+    "available_pick": [
+      {
+        "price": 56000,
+        "quota": 45
+      },
+      {
+        "price": 56000,
+        "quota": 55
+      }
+    ],
+    "available_duration": [
+      {
+        "duration": 8,
+        "price_add": 10000
+      },
+      {
+        "duration": 12,
+        "price_add": 16000
+      },
+      {
+         
+        "duration": 15,
+        "price_add": 20000
+      },
+      {
+         
+        "duration": 29,
+        "price_add": 32000
+      }
+    ],
     "region": "Amerika",
     "product_type": "topupable",
     "images": [
+      "https://picsum.photos/200/300",
       "https://picsum.photos/200/300",
       "https://picsum.photos/200/300"
     ]
   },
   {
     "id": 6,
-    "name": "E-SIM Amerika 30 Days",
-    "price": 450000,
-    "quota": "50GB",
+    "name": "E-SIM Amerika ",
+    "available_pick": [
+      {
+        "price": 56000,
+        "quota": 45
+      },
+      {
+        "price": 56000,
+        "quota": 55
+      }
+    ],
+    "available_duration": [
+      {
+        "duration": 8,
+        "price_add": 10000
+      },
+      {
+        "duration": 12,
+        "price_add": 16000
+      },
+      {
+         
+        "duration": 15,
+        "price_add": 20000
+      },
+      {
+         
+        "duration": 29,
+        "price_add": 32000
+      }
+    ],
     "region": "Amerika",
     "product_type": "topupable",
     "images": [
@@ -73,9 +247,37 @@
   },
   {
     "id": 7,
-    "name": "E-SIM Eropa 7 Days",
-    "price": 120000,
-    "quota": "20GB",
+    "name": "E-SIM Eropa",
+    "available_pick": [
+      {
+        "price": 56000,
+        "quota": 45
+      },
+      {
+        "price": 56000,
+        "quota": 55
+      }
+    ],
+    "available_duration": [
+      {
+        "duration": 8,
+        "price_add": 10000
+      },
+      {
+        "duration": 12,
+        "price_add": 16000
+      },
+      {
+         
+        "duration": 15,
+        "price_add": 20000
+      },
+      {
+         
+        "duration": 29,
+        "price_add": 32000
+      }
+    ],
     "region": "Eropa",
     "product_type": "instant",
     "images": [
@@ -85,9 +287,37 @@
   },
   {
     "id": 8,
-    "name": "E-SIM Eropa 15 Days",
-    "price": 230000,
-    "quota": "50GB",
+    "name": "E-SIM Eropa ",
+    "available_pick": [
+      {
+        "price": 56000,
+        "quota": 45
+      },
+      {
+        "price": 56000,
+        "quota": 55
+      }
+    ],
+    "available_duration": [
+      {
+        "duration": 8,
+        "price_add": 10000
+      },
+      {
+        "duration": 12,
+        "price_add": 16000
+      },
+      {
+         
+        "duration": 15,
+        "price_add": 20000
+      },
+      {
+         
+        "duration": 29,
+        "price_add": 32000
+      }
+    ],
     "region": "Eropa",
     "product_type": "topupable",
     "images": [
@@ -97,9 +327,37 @@
   },
   {
     "id": 9,
-    "name": "E-SIM Eropa 30 Days",
-    "price": 390000,
-    "quota": "100GB",
+    "name": "E-SIM Eropa ",
+    "available_pick": [
+      {
+        "price": 56000,
+        "quota": 45
+      },
+      {
+        "price": 56000,
+        "quota": 55
+      }
+    ],
+    "available_duration": [
+      {
+        "duration": 8,
+        "price_add": 10000
+      },
+      {
+        "duration": 12,
+        "price_add": 16000
+      },
+      {
+         
+        "duration": 15,
+        "price_add": 20000
+      },
+      {
+         
+        "duration": 29,
+        "price_add": 32000
+      }
+    ],
     "region": "Eropa",
     "product_type": "topupable",
     "images": [
@@ -109,9 +367,37 @@
   },
   {
     "id": 10,
-    "name": "E-SIM Oseania 7 Days",
-    "price": 110000,
-    "quota": "15GB",
+    "name": "E-SIM Oseania",
+    "available_pick": [
+      {
+        "price": 56000,
+        "quota": 45
+      },
+      {
+        "price": 56000,
+        "quota": 55
+      }
+    ],
+    "available_duration": [
+      {
+        "duration": 8,
+        "price_add": 10000
+      },
+      {
+        "duration": 12,
+        "price_add": 16000
+      },
+      {
+         
+        "duration": 15,
+        "price_add": 20000
+      },
+      {
+         
+        "duration": 29,
+        "price_add": 32000
+      }
+    ],
     "region": "Oseania",
     "product_type": "instant",
     "images": [
@@ -121,9 +407,37 @@
   },
   {
     "id": 11,
-    "name": "E-SIM Oseania 14 Days",
-    "price": 210000,
-    "quota": "35GB",
+    "name": "E-SIM Oseania ",
+    "available_pick": [
+      {
+        "price": 56000,
+        "quota": 45
+      },
+      {
+        "price": 56000,
+        "quota": 55
+      }
+    ],
+    "available_duration": [
+      {
+        "duration": 8,
+        "price_add": 10000
+      },
+      {
+        "duration": 12,
+        "price_add": 16000
+      },
+      {
+         
+        "duration": 15,
+        "price_add": 20000
+      },
+      {
+         
+        "duration": 29,
+        "price_add": 32000
+      }
+    ],
     "region": "Oseania",
     "product_type": "topupable",
     "images": [
@@ -133,9 +447,37 @@
   },
   {
     "id": 12,
-    "name": "E-SIM Afrika 10 Days",
-    "price": 185000,
-    "quota": "10GB",
+    "name": "E-SIM Afrika ",
+    "available_pick": [
+      {
+        "price": 56000,
+        "quota": 45
+      },
+      {
+        "price": 56000,
+        "quota": 55
+      }
+    ],
+    "available_duration": [
+      {
+        "duration": 8,
+        "price_add": 10000
+      },
+      {
+        "duration": 12,
+        "price_add": 16000
+      },
+      {
+         
+        "duration": 15,
+        "price_add": 20000
+      },
+      {
+         
+        "duration": 29,
+        "price_add": 32000
+      }
+    ],
     "region": "Afrika",
     "product_type": "instant",
     "images": [
@@ -145,9 +487,37 @@
   },
   {
     "id": 13,
-    "name": "E-SIM Afrika 30 Days",
-    "price": 380000,
-    "quota": "25GB",
+    "name": "E-SIM Afrika ",
+    "available_pick": [
+      {
+        "price": 56000,
+        "quota": 45
+      },
+      {
+        "price": 56000,
+        "quota": 55
+      }
+    ],
+    "available_duration": [
+      {
+        "duration": 8,
+        "price_add": 10000
+      },
+      {
+        "duration": 12,
+        "price_add": 16000
+      },
+      {
+         
+        "duration": 15,
+        "price_add": 20000
+      },
+      {
+         
+        "duration": 29,
+        "price_add": 32000
+      }
+    ],
     "region": "Afrika",
     "product_type": "topupable",
     "images": [

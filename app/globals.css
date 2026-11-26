@@ -33,3 +33,7 @@ body {
 .radio-list-style {
   @apply w-full hover:bg-main/5 cursor-pointer px-0 rounded-md flex items-center justify-between;
 }
+
+.badge-style{
+  @apply font-bold py-2 px-5 rounded-md;
+}
